@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context="com.example.sharangirdhani.inclass09.SignupActivity">
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:layout_alignStart="@+id/buttonCancel"
+        android:layout_alignEnd="@+id/buttonSignup" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editFirstName"
+        android:layout_alignRight="@+id/editFirstName"
+        android:layout_below="@+id/editFirstName"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:layout_alignStart="@+id/editFirstName" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editLastName"
+        android:layout_alignStart="@+id/editLastName"
+        android:layout_below="@+id/editLastName"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:layout_alignEnd="@+id/editLastName" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Choose Password"
+        android:inputType="textPersonName"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/editEmail"
+        android:layout_alignStart="@+id/editEmail"
+        android:layout_alignEnd="@+id/editEmail" />
+
+    <EditText
+        android:id="@+id/editRepeatPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPassword"
+        android:layout_alignStart="@+id/editPassword"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPersonName"
+        android:layout_alignEnd="@+id/editPassword" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editRepeatPassword"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/buttonCancel" />
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonCancel"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="@string/buttonSignup" />
+</RelativeLayout>

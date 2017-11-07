@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    tools:context="com.example.sharangirdhani.inclass09.MessageThreadActivity">
+
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButtonLogout"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewThreads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/editTextAddThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Add New Thread"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAddThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextAddThread"
+        android:layout_alignStart="@+id/imageButtonLogout"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewName"
+        android:text="Current Threads"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+</RelativeLayout>
